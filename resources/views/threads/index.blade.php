@@ -8,13 +8,18 @@
                 <div class="panel-heading">Forum Threads</div>
 
                 <div class="panel-body">
-                    <div class="list-group">
-                      <a href="#" class="list-group-item">
-                        Dapibus ac facilisis in
-                      </a>
-                      <a href="#" class="list-group-item">
-                        Morbi leo risus
-                      </a>
+                    
+                      <h3>asdflkasdfj</h3>
+                      <P>
+                         kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe 
+                         kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe 
+                      </P>
+                      <div class="panel panel-default">
+                      </div>
+                        <h3>asdflkasdfj</h3>
+                        <P>
+                          kappa kippo pepe is real kappa kippo pepe is real kappa kippo   pepe is real kappa kippo pepe is real kappa kippo pepe is   real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real 
+                      </P>
                     </div>
 
                 </div>
