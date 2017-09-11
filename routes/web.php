@@ -11,3 +11,8 @@ Route::get("/threads", function(){
 Route::get("/threads/create", function(){
 	return view ("threads.create");
 });
+
+Route::get("/", function(){
+
+	return view("hello", ["name" => "gabriel"]);
+});
