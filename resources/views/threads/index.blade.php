@@ -6,21 +6,21 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Forum Threads</div>
-
+                  
+                      @foreach($threads as $threads)
                 <div class="panel-body">
                     
-                      <h3>asdflkasdfj</h3>
+                      <h3>{{ $threads->title}}</h3>
                       <P>
-                         kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe 
-                         kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe 
+                         {{ $threads->context}}
                       </P>
+                      </div>
+                      
                       <div class="panel panel-default">
                       </div>
-                        <h3>asdflkasdfj</h3>
-                        <P>
-                          kappa kippo pepe is real kappa kippo pepe is real kappa kippo   pepe is real kappa kippo pepe is real kappa kippo pepe is   real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real kappa kippo pepe is real 
-                      </P>
-                    </div>
+
+                      @endforeach
+                    
 
                 </div>
             </div>
