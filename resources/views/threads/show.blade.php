@@ -7,10 +7,10 @@
             <div class="panel panel-default">
 
                 
-                <div class="panel-heading">{{ $thread[0] -> title }}</div>
+                <div class="panel-heading">{{ $thread -> title }}</div>
 
                 <div class="panel-body">
-                    {{ $thread[0] -> context }}
+                    {{ $thread -> context }}
                 </div>
             </div>
         </div>
