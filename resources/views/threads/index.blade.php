@@ -10,7 +10,12 @@
                       @foreach($threads as $threads)
                 <div class="panel-body">
                     
-                      <h3>{{ $threads->title}}</h3>
+                    <a href="/threads/{{ $threads->id }}" >
+                      <h3>
+                          {{ $threads->title}}
+                      </h3>
+                    </a>
+
                       <P>
                          {{ $threads->context}}
                       </P>

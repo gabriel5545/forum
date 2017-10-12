@@ -9,7 +9,7 @@ class ThreadsController extends Controller
 {
     public function index()
     {
-        $threads = Thread::all();
+        $threads = Thread::latest()->get();
         // $threads = DB::table("threads")->get(); way numer 2
         /*   sami hluturinn
         $threads = DB::select(" select * from threads" );
@@ -43,3 +43,7 @@ class ThreadsController extends Controller
         return redirect("/threads");
     }
 }
+
+/*
+ Thread::all()->->orderBy('title', 'desc')
+*/
