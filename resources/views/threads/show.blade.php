@@ -13,6 +13,12 @@
                     {{ $thread -> context }}
                 </div>
             </div>
+            <br/>
+            <form method="POST" action="/threads/{{ $thread -> id }}">
+            {{ csrf_field() }}
+            <textarea type="text" name="komment" class="form-control" rows="3"></textarea>
+            <br/>
+                <button class="btn btn-primary">Replay</button></form>
         </div>
     </div>
 </div>

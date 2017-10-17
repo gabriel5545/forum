@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Thread;
+use App\comment;
+use Auth;
 
 class ThreadsController extends Controller
 {
@@ -24,7 +26,7 @@ class ThreadsController extends Controller
     public function show($id)
     {
         $thread = Thread::find($id);
-        // same shit X2
+        $comment = comment::latest()->get();
         // $thread = DB::table("threads")->where("id", $id)->first();
         // same shit
     	// $thread = DB::select("select * from threads where id =?", [$id]);
@@ -41,6 +43,15 @@ class ThreadsController extends Controller
         $thread->save();
 
         return redirect("/threads");
+    }
+    public function kstore(Request $request, $id)
+    {
+        $comment = new comment;
+        $comment->comment = $request->komment;
+        $comment->user_id = Auth::id();
+        $comment->thread_id = $id;
+        $comment->save();
+        return redirect("/threads/{$id}");
     }
 }
 

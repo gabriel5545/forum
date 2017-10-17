@@ -16,8 +16,8 @@ class Comment extends Migration
             Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
             $table->string("comment");
-            $table->intiger("user_id");
-            $table->intiger("thread_id");
+            $table->integer("user_id");
+            $table->integer("thread_id");
             $table->foreign('thread_id')->references('id')->on('threads');
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ class Comment extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('comments');
     }
 }
